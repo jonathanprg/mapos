@@ -132,7 +132,10 @@ $periodo = $this->input->get('periodo');
 
                   echo '<td>';
                   if ($this->permission->checkPermission($this->session->userdata('permissao'), 'eLancamento')) {
-                      echo '<a href="#modalEditar" style="margin-right: 1%" data-toggle="modal" role="button" idLancamento="' . $r->idLancamentos . '" descricao="' . $r->descricao . '" valor="' . $r->valor . '" vencimento="' . date('d/m/Y', strtotime($r->data_vencimento)) . '" pagamento="' . date('d/m/Y', strtotime($r->data_pagamento)) . '" baixado="' . $r->baixado . '" cliente="' . $r->cliente_fornecedor . '" formaPgto="' . $r->forma_pgto . '" tipo="' . $r->tipo . '" class="btn btn-info tip-top editar" title="Editar Lançamento"><i class="fas fa-edit"></i></a>';
+                  if ($r->idos <> 0) {
+			  echo '<a styile="margin-right: 1%" href="' . base_url() . 'index.php/os/editar/' . $r->idos . '" class="btn btn-info tip-top" title="Editar OS"><i class="fas fa-edit"></i></a>'; 
+		  }
+			  echo '<a href="#modalEditar" style="margin-right: 1%" data-toggle="modal" role="button" idLancamento="' . $r->idLancamentos . '" descricao="' . $r->descricao . '" valor="' . $r->valor . '" vencimento="' . date('d/m/Y', strtotime($r->data_vencimento)) . '" pagamento="' . date('d/m/Y', strtotime($r->data_pagamento)) . '" baixado="' . $r->baixado . '" cliente="' . $r->cliente_fornecedor . '" formaPgto="' . $r->forma_pgto . '" tipo="' . $r->tipo . '" class="btn btn-info tip-top editar" title="Editar Lançamento"><i class="fas fa-eye"></i></a>';
                   }
                   if ($this->permission->checkPermission($this->session->userdata('permissao'), 'dLancamento')) {
                       echo '<a href="#modalExcluir" data-toggle="modal" role="button" idLancamento="' . $r->idLancamentos . '" class="btn btn-danger tip-top excluir" title="Excluir Lançamento"><i class="fas fa-trash-alt"></i></a>';

@@ -19,7 +19,7 @@
                   <div class="control-group">
                       <label for="documento" class="control-label">CPF/CNPJ<span class="required">*</span></label>
                       <div class="controls">
-                          <input id="documento" class="cpfcnpj" type="text" name="documento" value="<?php echo set_value('documento'); ?>"  />
+                          <input id="documento" class="cpfcnpj" type="text" name="contato" value="<?php echo set_value('documento'); ?>"  />
                           <button id="buscar_info_cnpj" class="btn btn-xs" type="button">Buscar Informações (CNPJ)</button>
                       </div>
                   </div>
@@ -52,52 +52,52 @@
                     <div class="control-group">
                         <label for="email" class="control-label">Email<span class="required">*</span></label>
                         <div class="controls">
-                            <input id="email" type="text" name="email" value="<?php echo set_value('email'); ?>" />
+                            <input id="email" type="text" name="contato" value="<?php echo set_value('email'); ?>" />
                         </div>
                     </div>
                     <div class="control-group" class="control-label">
                         <label for="cep" class="control-label">CEP<span class="required">*</span></label>
                         <div class="controls">
-                            <input id="cep" type="text" name="cep" value="<?php echo set_value('cep'); ?>" />
+                            <input id="cep" type="text" name="contato" value="<?php echo set_value('cep'); ?>" />
                         </div>
                     </div>
                     <div class="control-group" class="control-label">
                         <label for="rua" class="control-label">Rua<span class="required">*</span></label>
                         <div class="controls">
-                            <input id="rua" type="text" name="rua" value="<?php echo set_value('rua'); ?>" />
+                            <input id="rua" type="text" name="contato" value="<?php echo set_value('rua'); ?>" />
                         </div>
                     </div>
                     <div class="control-group">
                         <label for="numero" class="control-label">Número<span class="required">*</span></label>
                         <div class="controls">
-                            <input id="numero" type="text" name="numero" value="<?php echo set_value('numero'); ?>" />
+                            <input id="numero" type="text" name="contato" value="<?php echo set_value('numero'); ?>" />
                         </div>
                     </div>
                     <div class="control-group">
                         <label for="complemento" class="control-label">Complemento</label>
                         <div class="controls">
-                            <input id="complemento" type="text" name="complemento" value="<?php echo set_value('complemento'); ?>" />
+                            <input id="complemento" type="text" name="contato" value="<?php echo set_value('complemento'); ?>" />
                         </div>
                     </div>
 
                     <div class="control-group" class="control-label">
                         <label for="bairro" class="control-label">Bairro<span class="required">*</span></label>
                         <div class="controls">
-                            <input id="bairro" type="text" name="bairro" value="<?php echo set_value('bairro'); ?>" />
+                            <input id="bairro" type="text" name="contato" value="<?php echo set_value('bairro'); ?>" />
                         </div>
                     </div>
 
                     <div class="control-group" class="control-label">
                         <label for="cidade" class="control-label">Cidade<span class="required">*</span></label>
                         <div class="controls">
-                            <input id="cidade" type="text" name="cidade" value="<?php echo set_value('cidade'); ?>" />
+                            <input id="cidade" type="text" name="contato" value="<?php echo set_value('cidade'); ?>" />
                         </div>
                     </div>
 
                     <div class="control-group" class="control-label">
                         <label for="estado" class="control-label">Estado<span class="required">*</span></label>
                         <div class="controls">
-                            <input id="estado" type="text" name="estado" value="<?php echo set_value('estado'); ?>" />
+                            <input id="estado" type="text" name="contato" value="<?php echo set_value('estado'); ?>" />
                         </div>
                     </div>
 
